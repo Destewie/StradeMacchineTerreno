@@ -25,7 +25,7 @@ public class WorldListener implements EventHandler<MouseEvent>
 
     @Override
     public void handle(MouseEvent event) 
-    {
+    {        
         if (event.getSource() instanceof Terreno) 
         {
             Terreno t = (Terreno) event.getSource(); //il pezzo di terreno in cui ho cliccato

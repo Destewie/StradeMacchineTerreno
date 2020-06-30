@@ -27,6 +27,6 @@ abstract class Terreno extends Rectangle
         this.setHeight(LATO);
         this.setStroke(Color.BLACK);
         
-        this.addEventHandler(MouseEvent.MOUSE_CLICKED, w);
+        this.addEventFilter(MouseEvent.MOUSE_CLICKED, w);
     }
 }

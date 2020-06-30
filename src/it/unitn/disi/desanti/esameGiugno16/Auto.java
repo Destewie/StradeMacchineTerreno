@@ -3,6 +3,7 @@
  */
 package it.unitn.disi.desanti.esameGiugno16;
 
+import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
 
@@ -26,5 +27,7 @@ public class Auto extends Circle
         this.setFill(Paint.valueOf("RED"));
         this.setStroke(Paint.valueOf("DARKRED"));
         this.setStrokeWidth(3);
+        
+        this.addEventHandler(MouseEvent.MOUSE_CLICKED, new HandlerAuto());
     }
 }
